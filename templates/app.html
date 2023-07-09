@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StartUp Profit Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css" src="app.css">
+</head>
+<body style="background-color: rgb(156, 142, 120);">
+	<h1 style="text-align: center;">Startup Profit Prediction</h1>
+<div style="display: flex; flex-direction: row; justify-content: center;">
+<div class="container1" style="background-color: antiquewhite; margin-top: 20px; width: 650px; border-radius: 50px;">
+<div class="container2" style="margin-left: 50px; margin-right: 50px; margin-bottom: 50px; margin-top: 50px; text-align: center;">
+<form class="form" action='/predict' method="POST">
+	<h2>R&D Spend</h2>
+	<input class="form-control form-control-lg" type="text" placeholder="000000.00" aria-label=".form-control-lg example" id="RnD"  name="RnD" value="123456.00"
+	style="border: none; height: 25px; padding-left: 25px; border-radius: 10px;">
+    <!-- <input class="rnd"  type="text" id="RnD"  name="RnD" placeholder="000000.00" value="123456.00"> -->
+
+	<h2>Administration</h2>
+	<input class="form-control form-control-lg" type="text" id="Administration"  name="Administration" placeholder="000000.00" value="145643.00"
+	style="border: none; height: 25px; padding-left: 25px; border-radius: 10px;">
+    <!-- <input class="administration"  type="text" id="Administration"  name="Administration" placeholder="000000.00" value="145643.00"> -->
+
+	<h2>Marketing Spend</h2>
+	<input class="form-control form-control-lg" type="text" id="Marketing"  name="Marketing" placeholder="000000.00" value="453263.00"
+	style="border: none; height: 25px; padding-left: 25px; border-radius: 10px;">
+	<!-- <input class="marketing"  type="text" id="Marketing"  name="Marketing" placeholder="000000.00" value="145643.00"> -->
+
+	<h2>State</h2>
+	<input class="form-control form-control-lg" type="text" id="State"  name="State" placeholder="1/2/3"
+	style="border: none; height: 25px; padding-left: 25px; border-radius:10px;">
+	<br>
+	<!-- <input class="marketing"  type="text" id="State"  name="State" placeholder="1/2/3"> -->
+<!-- 
+	<h2>States</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-Children-1" name="State" value="NewYork"/>
+		<label for="radio-Children-1">New York</label>
+		<input type="radio" id="radio-Children-2" name="State" value="California" checked/>
+		<label for="radio-Children-2">California</label>
+		<input type="radio" id="radio-Children-3" name="State" value="Florida"/>
+		<label for="radio-Children-3">Florida</label>
+	</div> -->
+	<input type="submit" class="btn btn-dark" value="predict" style="margin-top: 30px; border: none; padding-top: 5px; padding-bottom: 5px; padding-left: 10px; padding-right: 10px; width: 100px; background-color: rgb(156, 142, 120); border-radius: 5px;"></input>
+		<h2>
+			Prediksi Profit :
+		</h2> 
+		<h2 style="font-size: 28px; color: brown;">
+			{{results}}
+		</h2>
+
+</form>
+<p style="font-size: 13px;"> Copyright : Marwah Kamila A</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
