@@ -8,3 +8,12 @@ kaggle dataset source : https://www.kaggle.com/datasets/karthickveerakumar/start
 ## Test Run
 
 ![screencapture-127-0-0-1-5000-predict-2023-09-20-01_48_58](https://github.com/Marwahkamilaahmad/Web-Cost-Predict-StartUp/assets/114375719/1b3b57fc-16a4-41fa-ba83-8b5a58fd8c0f)
+
+
+## How To Run ?
+```
+Serving Flask app 'server'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+```
