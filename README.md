@@ -11,6 +11,9 @@ kaggle dataset source : https://www.kaggle.com/datasets/karthickveerakumar/start
 
 
 ## How To Run ?
+
+1. $ pip install -U Flask (install flask )
+2. $ flask run
 ```
 Serving Flask app 'server'
  * Debug mode: on
